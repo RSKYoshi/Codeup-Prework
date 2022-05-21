@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>My First HTML Form</title>
+		</head>
+		<body>
+			<h2>User Login</h2>
+			<form method="POST" action="http://request-inspector.glitch.me/">
+				<input type="hidden" id="user_id" name="user_id" value="1234"> 
+    			<p>
+        			<label for="username">Username</label>
+        			<input id="username" name="username" type="text" placeholder="Enter Username">
+    			</p>
+    			<p>
+        			<label for="password">Password</label>
+       				<input id="password" name="password" type="password" placeholder="Enter Password">
+    			</p>
+   				<p>
+       				<button type="submit">Login</button>
+   				</p>
+   			</form>
+   			<h2>Compose an Email</h2>
+   			<form method="POST" action="http://request-inspector.glitch.me/">
+    			<p>
+        			<label for="To">To</label>
+        			<input id="To" name="To" type="text">
+    			</p>
+    			<p>
+        			<label for="From">From</label>
+       				<input id="From" name="From" type="From">
+    			</p>
+    			<p>
+    				<label for="Subject">Subject</Subject>
+       				<input id="Subject" name="Subject" type="Subject">
+   				</p>
+   				<p>
+    				<label for="Body">Body</Subject>
+       				<textarea id="email_body" name="email_body" rows="5" cols="40"></textarea>
+       			</p>
+       				<input type="checkbox" id="mailing_list" name="mailing_list" value="yes" checked>
+					<label for="mailing_list">Do you want to save a copy to the sent folder?</label>
+       			<p>
+       				<button type="submit">Send</button>
+   				</p>
+   			</form>
+   			<h2>Multiple Choice Test</h2>
+   			<form method="POST" action="http://request-inspector.glitch.me/">
+   				<p>What is the first lettter of the alphabet?</p>
+   				<label> 
+   					<input type="radio" name="Answer 1" value="A">A
+   				</label>
+   				<label> 
+   					<input type="radio" name="Answer 1" value="B">B
+   				</label>
+   				<label> 
+   					<input type="radio" name="Answer 1" value="C">C
+   				</label>
+   			<p>Select answers needed to equal 4</p>
+   				<label><input type="checkbox" id="number1" name="number[]" value="1"> 1</input>
+   				<label><input type="checkbox" id="number2" name="number[]" value="2"> 2</input>
+   				<label><input type="checkbox" id="number3" name="number[]" value="3"> 3</input>
+   			</p>
+   			<p>
+   			<label for="Roman Numeral">What is the Roman numeral for 5? </label>
+   			<select id="Roman Numeral" name="Roman Numeral[]" multiple>
+   				<option value="I">I</option> 
+   				<option value="II">II</option>
+   				<option value="V">V</option>
+   			</select>  
+   			</p>
+   			<p>
+       			<button type="submit">Submit</button>
+   			</p>
+   			</form>
+   			<h2>Select Testing</h2>
+   			<form method="POST" action="http://request-inspector.glitch.me/">
+   				<label for="Is coding fun?">Is coding fun?</label>
+   				<select id="Is coding fun?" name="Is coding fun?">
+   					<option value="1">Yes!</option>
+   					<option value="0">No</option>
+   				</select>
+   				<p>
+       				<button type="submit">Submit</button>
+   				</p>
+   			</form>
+   			
+
+	</html>
+
+	
